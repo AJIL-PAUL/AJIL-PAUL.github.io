@@ -22,6 +22,13 @@ body {
   color: #3e3947;
   background-color: white;
 }
+.header-bg {
+  background-image: url(../images/SVG/Main/Mobile.svg);
+  background-position: top;
+}
+.header-text {
+  margin-top: 15rem !important;
+}
 
 body,
 html {
@@ -56,8 +63,8 @@ Main components
 
 -------------------------------- */
 .cd-section {
-  min-height: 100%;
   position: relative;
+  margin-bottom: 4rem;
 }
 
 .cd-section h1,
@@ -325,10 +332,41 @@ Main components
 .touch #cd-vertical-nav li:last-child a {
   border-bottom: none;
 }
-
+@media only screen and (min-width: 350px) {
+  .header-bg {
+    background-image: url(../images/SVG/Main/Mobile.svg);
+    background-position: top;
+  }
+  .header-text {
+    margin-top: 18rem !important;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .header-bg {
+    background-image: url(../images/SVG/Main/Lap.svg);
+  }
+  .header-text {
+    margin-top: 8rem !important;
+  }
+}
 @media only screen and (min-width: 768px) {
   .touch .cd-nav-trigger,
   .touch #cd-vertical-nav {
     bottom: 40px;
+  }
+  .header-text {
+    margin-top: 8rem !important;
+  }
+  .cd-section {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* .header-text {
+    margin-top: 8rem !important;
+  } */
+  .header-bg {
+    background-position: 40% 40%;
+    min-height: 100vh;
   }
 }
