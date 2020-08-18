@@ -93,17 +93,6 @@ Main components
 .cd-section p {
   line-height: 1.6;
 }
-@media only screen and (min-width: 768px) {
-  .cd-section h1 {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-  .cd-section p {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 2;
-  }
-}
 
 .cd-scroll-down {
   position: absolute;
@@ -332,21 +321,91 @@ Main components
 .touch #cd-vertical-nav li:last-child a {
   border-bottom: none;
 }
-@media only screen and (min-width: 350px) {
+.footer-bg {
+  z-index: 999;
+}
+.footerbg {
+  opacity: 0.33;
+  z-index: -10;
+  transform: rotate(10deg);
+  width: 150%;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 400px;
+  transform-origin: 0 0;
+  background: linear-gradient(0deg, #fff 50%, #e4e4e4 75%, #d4d4d4);
+}
+.footer-bg {
+  position: absolute;
+  top: 0;
+  background-color: #3e3947;
+  z-index: 100;
+  left: 200%;
+  height: 500;
+  width: 1570px;
+  align-self: left;
+  content: "";
+  opacity: 0.33;
+  transform: rotate(-180deg);
+  border-top-left-radius: 115px;
+  border-top-right-radius: 500px;
+  transform: translateX(-50%) rotate(13deg) translate(115px, -45px);
+  transform-origin: 0 0;
+  /* background: linear-gradient(0deg, #fff 50%, #e4e4e4 75%, #d4d4d4); */
+}
+
+/* @media (max-width: 47.99em) {
+  .footer-bg {
+    top: 10px;
+    left: 3%;
+   
+  }
+} */
+.text {
+  font-size: xx-small;
+}
+.check input:invalid {
+  border-color: red;
+}
+
+/* FLOATING LABEL */
+.label-floating input:not(:placeholder-shown),
+.label-floating textarea:not(:placeholder-shown) {
+  padding-top: 1.4rem;
+}
+.label-floating input:not(:placeholder-shown) ~ label,
+.label-floating textarea:not(:placeholder-shown) ~ label {
+  font-size: 0.8rem;
+  transition: all 0.2s ease-in-out;
+  color: #0043ca;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 330px) {
   .header-bg {
     background-image: url(../images/SVG/Main/Mobile.svg);
     background-position: top;
+  }
+
+  .footerbg {
+    width: 150%;
   }
   .header-text {
     margin-top: 18rem !important;
   }
 }
+
 @media only screen and (min-width: 500px) {
   .header-bg {
     background-image: url(../images/SVG/Main/Lap.svg);
   }
+  .footerbg {
+    width: 140%;
+  }
   .header-text {
     margin-top: 8rem !important;
+  }
+  .text {
+    font-size: x-small;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -354,17 +413,41 @@ Main components
   .touch #cd-vertical-nav {
     bottom: 40px;
   }
+  .footerbg {
+    width: 120%;
+  }
   .header-text {
     margin-top: 8rem !important;
   }
   .cd-section {
     margin-bottom: 1rem;
   }
+  .text {
+    font-size: small;
+  }
+
+  .cd-section h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+  .cd-section p {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+  }
 }
+
 @media only screen and (min-width: 1024px) {
   /* .header-text {
     margin-top: 8rem !important;
   } */
+  .text {
+    font-size: medium;
+  }
+
+  .footerbg {
+    width: 110%;
+  }
   .header-bg {
     background-position: 40% 40%;
     min-height: 100vh;
