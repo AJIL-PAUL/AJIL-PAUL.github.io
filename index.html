@@ -736,7 +736,9 @@
             class="flex  flex-col max-w-4xl mx-2 md:ml-24  lg:ml-32 bg-white rounded-lg mb-8 shadow-xl overflow-hidden md:flex-row ">
             <div style="background-color: #125eed;" data-aos="fade-right"
               class="md:flex md:items-center md:justify-center md:w-1/2 ">
-              <form id="contact-me" class="w-full mx-auto max-w-3xl shadow px-8 py-3 text-gray-700">
+
+              <form id="contact-me" action="https://formspree.io/f/xyybjrep" method="POST"
+                class="w-full mx-auto max-w-3xl shadow px-8 py-3 text-gray-700">
 
 
                 <h2 class="w-full mx-auto text-center sm:text-left font-bold text-white leading-tight mb-5">
@@ -747,7 +749,7 @@
                   <div class="relative w-full appearance-none label-floating">
                     <input
                       class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="name" type="text" placeholder="Your name" required>
+                      type="text" id="name" name="name" placeholder="Your name" required>
                     <label for="name"
                       class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text">
                       Your name
@@ -759,7 +761,7 @@
                   <div class="relative w-full appearance-none label-floating">
                     <input
                       class="tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="email" type="text" placeholder="Your email" required>
+                      id="email" type="text" name="_replyto" placeholder="Your email" required>
                     <label for="email"
                       class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text">
                       Your email
@@ -771,7 +773,7 @@
                   <div class="relative w-full appearance-none label-floating">
                     <textarea
                       class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="message" type="text" placeholder="Message..."></textarea>
+                      id="message" type="text" name="message" placeholder="Message..."></textarea>
                     <label for="message"
                       class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text">Message...
                     </label>
